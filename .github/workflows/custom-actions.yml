@@ -32,4 +32,4 @@ jobs:
       run: echo "Hello ${{ inputs.name }}"
     # runs container custom action
     - name: container custom action
-      uses: jjlevesque/Hello-word-reactor@v1.0.5
+      uses: ./cust-container
