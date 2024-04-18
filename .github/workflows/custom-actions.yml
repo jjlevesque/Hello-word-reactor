@@ -29,7 +29,7 @@ jobs:
     steps:
     # checkout the repostory
     - name: checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
