@@ -1,0 +1,19 @@
+name: 'Hello word demo'
+description: 'custom action Docker'
+inputs: 
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'JJL'
+outputs:
+  time:
+    description: 'The time the greeting havbe benn sent'
+branding: 
+  icon: 'shield'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet}}
+
