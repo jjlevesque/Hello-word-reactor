@@ -4,7 +4,7 @@ inputs:
   who-to-greet:
     description: 'Who to greet'
     required: true
-    default: 'JJL'
+    default: 'nobody'
 outputs:
   time:
     description: 'The time the greeting havbe benn sent'
