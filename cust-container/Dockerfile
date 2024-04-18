@@ -2,11 +2,11 @@
 FROM alpine:3.10
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+COPY script.sh /script.sh
 
-# Gives execute permissions to the `entrypoint.sh` file
-RUN chmod +x /entrypoint.sh
+# Gives execute permissions to the `` file
+RUN chmod +x /script.sh
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+# Code file to execute when the docker container starts up `)
+ENTRYPOINT ["/script.sh"]
 
